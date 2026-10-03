@@ -25,6 +25,7 @@ const controller = require("../controller/sector.controller");
  *             properties:
  *               sector_name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: sector created successfully
@@ -106,6 +107,7 @@ router.get("/sectors/:id", controller.getSectorById);
  *             properties:
  *               sector_name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: sector updated successfully

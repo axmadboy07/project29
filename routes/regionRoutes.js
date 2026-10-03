@@ -25,6 +25,7 @@ const controller = require("../controller/region.controller");
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: region created successfully
@@ -106,6 +107,7 @@ router.get("/regions/:id", controller.getRegionById);
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: region updated successfully

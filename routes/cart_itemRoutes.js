@@ -25,9 +25,10 @@ const controller = require("../controller/cart_item.controller");
  *               - cart_id
  *             properties:
  *               ticket_id:
- *                 type: string
+ *                 type: integer
  *               cart_id:
- *                 type: string
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: cart item created successfully
@@ -108,9 +109,10 @@ router.get("/cart-items/:id", controller.getCartItemById);
  *             type: object
  *             properties:
  *               ticket_id:
- *                 type: string
+ *                 type: integer
  *               cart_id:
- *                 type: string
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: cart item updated successfully

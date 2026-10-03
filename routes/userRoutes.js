@@ -22,15 +22,28 @@ const controller = require("../controller/customer.controller");
  *             type: object
  *             required:
  *               - first_name
- *               - email
  *               - hashed_password
+ *               - email
  *             properties:
  *               first_name:
  *                 type: string
- *               email:
+ *               last_name:
+ *                 type: string
+ *               phone:
  *                 type: string
  *               hashed_password:
  *                 type: string
+ *               email:
+ *                 type: string
+ *               birth_date:
+ *                 type: string
+ *               gender_id:
+ *                 type: integer
+ *               lang_id:
+ *                 type: integer
+ *               hashed_refresh_token:
+ *                 type: string
+
  *     responses:
  *       201:
  *         description: user created successfully
@@ -112,10 +125,23 @@ router.get("/users/:id", controller.getCustomerById);
  *             properties:
  *               first_name:
  *                 type: string
- *               email:
+ *               last_name:
+ *                 type: string
+ *               phone:
  *                 type: string
  *               hashed_password:
  *                 type: string
+ *               email:
+ *                 type: string
+ *               birth_date:
+ *                 type: string
+ *               gender_id:
+ *                 type: integer
+ *               lang_id:
+ *                 type: integer
+ *               hashed_refresh_token:
+ *                 type: string
+
  *     responses:
  *       200:
  *         description: user updated successfully

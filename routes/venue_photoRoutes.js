@@ -25,9 +25,10 @@ const controller = require("../controller/venue_photo.controller");
  *               - url
  *             properties:
  *               venue_id:
- *                 type: string
+ *                 type: integer
  *               url:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: venue photo created successfully
@@ -108,9 +109,10 @@ router.get("/venue-photos/:id", controller.getVenuePhotoById);
  *             type: object
  *             properties:
  *               venue_id:
- *                 type: string
+ *                 type: integer
  *               url:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: venue photo updated successfully

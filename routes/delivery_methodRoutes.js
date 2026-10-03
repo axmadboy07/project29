@@ -25,6 +25,7 @@ const controller = require("../controller/delivery_method.controller");
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: delivery method created successfully
@@ -106,6 +107,7 @@ router.get("/delivery-methods/:id", controller.getDeliveryMethodById);
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: delivery method updated successfully

@@ -20,11 +20,12 @@ const controller = require("../controller/flat.controller");
  *         application/json:
  *           schema:
  *             type: object
- *             required:
- *               - condition
  *             properties:
+ *               etaj:
+ *                 type: integer
  *               condition:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: flat created successfully
@@ -104,8 +105,11 @@ router.get("/flats/:id", controller.getFlatById);
  *           schema:
  *             type: object
  *             properties:
+ *               etaj:
+ *                 type: integer
  *               condition:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: flat updated successfully

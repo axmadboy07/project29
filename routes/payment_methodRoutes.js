@@ -25,6 +25,7 @@ const controller = require("../controller/payment_method.controller");
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: payment method created successfully
@@ -106,6 +107,7 @@ router.get("/payment-methods/:id", controller.getPaymentMethodById);
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: payment method updated successfully

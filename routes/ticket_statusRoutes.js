@@ -25,6 +25,7 @@ const controller = require("../controller/ticket_status.controller");
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: ticket status created successfully
@@ -106,6 +107,7 @@ router.get("/ticket-statuses/:id", controller.getTicketStatusById);
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: ticket status updated successfully

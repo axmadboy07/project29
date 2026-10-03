@@ -25,6 +25,13 @@ const controller = require("../controller/human_category.controller");
  *             properties:
  *               name:
  *                 type: string
+ *               start_age:
+ *                 type: string
+ *               finish_age:
+ *                 type: string
+ *               gender_id:
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: human category created successfully
@@ -106,6 +113,13 @@ router.get("/human-categories/:id", controller.getHumanCategoryById);
  *             properties:
  *               name:
  *                 type: string
+ *               start_age:
+ *                 type: string
+ *               finish_age:
+ *                 type: string
+ *               gender_id:
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: human category updated successfully

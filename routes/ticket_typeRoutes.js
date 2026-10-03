@@ -25,6 +25,7 @@ const controller = require("../controller/ticket_type.controller");
  *             properties:
  *               ticket_type:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: ticket type created successfully
@@ -106,6 +107,7 @@ router.get("/ticket-types/:id", controller.getTicketTypeById);
  *             properties:
  *               ticket_type:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: ticket type updated successfully

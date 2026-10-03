@@ -31,6 +31,13 @@ const controller = require("../controller/admin.controller");
  *                 type: string
  *               hashed_password:
  *                 type: string
+ *               is_active:
+ *                 type: boolean
+ *               is_creator:
+ *                 type: boolean
+ *               hashed_refresh_token:
+ *                 type: string
+
  *     responses:
  *       201:
  *         description: admin created successfully
@@ -116,6 +123,13 @@ router.get("/admins/:id", controller.getAdminById);
  *                 type: string
  *               hashed_password:
  *                 type: string
+ *               is_active:
+ *                 type: boolean
+ *               is_creator:
+ *                 type: boolean
+ *               hashed_refresh_token:
+ *                 type: string
+
  *     responses:
  *       200:
  *         description: admin updated successfully

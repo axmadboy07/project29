@@ -22,12 +22,24 @@ const controller = require("../controller/venue.controller");
  *             type: object
  *             required:
  *               - name
- *               - address
  *             properties:
  *               name:
  *                 type: string
  *               address:
  *                 type: string
+ *               location:
+ *                 type: string
+ *               site:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               schema:
+ *                 type: string
+ *               region_id:
+ *                 type: integer
+ *               district_id:
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: venue created successfully
@@ -111,6 +123,19 @@ router.get("/venues/:id", controller.getVenueById);
  *                 type: string
  *               address:
  *                 type: string
+ *               location:
+ *                 type: string
+ *               site:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               schema:
+ *                 type: string
+ *               region_id:
+ *                 type: integer
+ *               district_id:
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: venue updated successfully

@@ -24,7 +24,14 @@ const controller = require("../controller/cart.controller");
  *               - customer_id
  *             properties:
  *               customer_id:
+ *                 type: integer
+ *               createdAt:
  *                 type: string
+ *               finishedAt:
+ *                 type: string
+ *               status_id:
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: cart created successfully
@@ -105,7 +112,14 @@ router.get("/carts/:id", controller.getCartById);
  *             type: object
  *             properties:
  *               customer_id:
+ *                 type: integer
+ *               createdAt:
  *                 type: string
+ *               finishedAt:
+ *                 type: string
+ *               status_id:
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: cart updated successfully

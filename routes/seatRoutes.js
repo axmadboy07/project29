@@ -20,17 +20,20 @@ const controller = require("../controller/seat.controller");
  *         application/json:
  *           schema:
  *             type: object
- *             required:
- *               - sector_id
- *               - row_number
- *               - number
  *             properties:
  *               sector_id:
- *                 type: string
+ *                 type: integer
  *               row_number:
- *                 type: string
+ *                 type: integer
  *               number:
+ *                 type: integer
+ *               venue_id:
+ *                 type: integer
+ *               seat_type_id:
+ *                 type: integer
+ *               location_in_schema:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: seat created successfully
@@ -111,11 +114,18 @@ router.get("/seats/:id", controller.getSeatById);
  *             type: object
  *             properties:
  *               sector_id:
- *                 type: string
+ *                 type: integer
  *               row_number:
- *                 type: string
+ *                 type: integer
  *               number:
+ *                 type: integer
+ *               venue_id:
+ *                 type: integer
+ *               seat_type_id:
+ *                 type: integer
+ *               location_in_schema:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: seat updated successfully

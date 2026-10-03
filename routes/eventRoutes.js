@@ -25,6 +25,29 @@ const controller = require("../controller/event.controller");
  *             properties:
  *               name:
  *                 type: string
+ *               photo:
+ *                 type: string
+ *               start_date:
+ *                 type: string
+ *               start_time:
+ *                 type: string
+ *               finish_date:
+ *                 type: string
+ *               finish_time:
+ *                 type: string
+ *               info:
+ *                 type: string
+ *               event_type_id:
+ *                 type: integer
+ *               human_category_id:
+ *                 type: integer
+ *               venue_id:
+ *                 type: integer
+ *               lang_id:
+ *                 type: integer
+ *               release_date:
+ *                 type: string
+
  *     responses:
  *       201:
  *         description: event created successfully
@@ -106,6 +129,29 @@ router.get("/events/:id", controller.getEventById);
  *             properties:
  *               name:
  *                 type: string
+ *               photo:
+ *                 type: string
+ *               start_date:
+ *                 type: string
+ *               start_time:
+ *                 type: string
+ *               finish_date:
+ *                 type: string
+ *               finish_time:
+ *                 type: string
+ *               info:
+ *                 type: string
+ *               event_type_id:
+ *                 type: integer
+ *               human_category_id:
+ *                 type: integer
+ *               venue_id:
+ *                 type: integer
+ *               lang_id:
+ *                 type: integer
+ *               release_date:
+ *                 type: string
+
  *     responses:
  *       200:
  *         description: event updated successfully

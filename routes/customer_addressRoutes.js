@@ -22,15 +22,28 @@ const controller = require("../controller/customer_address.controller");
  *             type: object
  *             required:
  *               - customer_id
- *               - street
- *               - house
  *             properties:
  *               customer_id:
+ *                 type: integer
+ *               name:
  *                 type: string
+ *               region_id:
+ *                 type: integer
+ *               district_id:
+ *                 type: integer
  *               street:
  *                 type: string
  *               house:
  *                 type: string
+ *               flat_id:
+ *                 type: integer
+ *               location:
+ *                 type: string
+ *               post_index:
+ *                 type: string
+ *               info:
+ *                 type: string
+
  *     responses:
  *       201:
  *         description: customer address created successfully
@@ -111,11 +124,26 @@ router.get("/customer-addresses/:id", controller.getCustomerAddressById);
  *             type: object
  *             properties:
  *               customer_id:
+ *                 type: integer
+ *               name:
  *                 type: string
+ *               region_id:
+ *                 type: integer
+ *               district_id:
+ *                 type: integer
  *               street:
  *                 type: string
  *               house:
  *                 type: string
+ *               flat_id:
+ *                 type: integer
+ *               location:
+ *                 type: string
+ *               post_index:
+ *                 type: string
+ *               info:
+ *                 type: string
+
  *     responses:
  *       200:
  *         description: customer address updated successfully

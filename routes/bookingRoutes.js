@@ -24,7 +24,20 @@ const controller = require("../controller/booking.controller");
  *               - cart_id
  *             properties:
  *               cart_id:
+ *                 type: integer
+ *               createdAt:
  *                 type: string
+ *               finished:
+ *                 type: string
+ *               payment_method_id:
+ *                 type: integer
+ *               delivery_method_id:
+ *                 type: integer
+ *               discount_id:
+ *                 type: integer
+ *               status_id:
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: booking created successfully
@@ -105,7 +118,20 @@ router.get("/bookings/:id", controller.getBookingById);
  *             type: object
  *             properties:
  *               cart_id:
+ *                 type: integer
+ *               createdAt:
  *                 type: string
+ *               finished:
+ *                 type: string
+ *               payment_method_id:
+ *                 type: integer
+ *               delivery_method_id:
+ *                 type: integer
+ *               discount_id:
+ *                 type: integer
+ *               status_id:
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: booking updated successfully

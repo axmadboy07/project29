@@ -25,9 +25,10 @@ const controller = require("../controller/venue_types.controller");
  *               - type_id
  *             properties:
  *               venue_id:
- *                 type: string
+ *                 type: integer
  *               type_id:
- *                 type: string
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: venue type created successfully
@@ -108,9 +109,10 @@ router.get("/venue-types/:id", controller.getVenueTypesById);
  *             type: object
  *             properties:
  *               venue_id:
- *                 type: string
+ *                 type: integer
  *               type_id:
- *                 type: string
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: venue type updated successfully

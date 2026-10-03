@@ -25,9 +25,18 @@ const controller = require("../controller/ticket.controller");
  *               - price
  *             properties:
  *               event_id:
- *                 type: string
+ *                 type: integer
+ *               seat_id:
+ *                 type: integer
  *               price:
- *                 type: string
+ *                 type: number
+ *               service_fee:
+ *                 type: number
+ *               status_id:
+ *                 type: integer
+ *               ticket_type_id:
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: ticket created successfully
@@ -108,9 +117,18 @@ router.get("/tickets/:id", controller.getTicketById);
  *             type: object
  *             properties:
  *               event_id:
- *                 type: string
+ *                 type: integer
+ *               seat_id:
+ *                 type: integer
  *               price:
- *                 type: string
+ *                 type: number
+ *               service_fee:
+ *                 type: number
+ *               status_id:
+ *                 type: integer
+ *               ticket_type_id:
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: ticket updated successfully

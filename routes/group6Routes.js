@@ -21,10 +21,25 @@ const controller = require("../controller/customer.controller");
  *           schema:
  *             type: object
  *             required:
- *               - first_name
+ *               - name
  *             properties:
- *               first_name:
+ *               name:
  *                 type: string
+ *               address:
+ *                 type: string
+ *               location:
+ *                 type: string
+ *               site:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               schema:
+ *                 type: string
+ *               region_id:
+ *                 type: integer
+ *               district_id:
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: group6 item created successfully
@@ -104,8 +119,23 @@ router.get("/group6/:id", controller.getCustomerById);
  *           schema:
  *             type: object
  *             properties:
- *               first_name:
+ *               name:
  *                 type: string
+ *               address:
+ *                 type: string
+ *               location:
+ *                 type: string
+ *               site:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               schema:
+ *                 type: string
+ *               region_id:
+ *                 type: integer
+ *               district_id:
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: group6 item updated successfully

@@ -26,11 +26,22 @@ const controller = require("../controller/customer_card.controller");
  *               - number
  *             properties:
  *               customer_id:
- *                 type: string
+ *                 type: integer
  *               name:
+ *                 type: string
+ *               phone:
  *                 type: string
  *               number:
  *                 type: string
+ *               year:
+ *                 type: string
+ *               month:
+ *                 type: string
+ *               is_active:
+ *                 type: boolean
+ *               is_main:
+ *                 type: boolean
+
  *     responses:
  *       201:
  *         description: customer card created successfully
@@ -111,11 +122,22 @@ router.get("/customer-cards/:id", controller.getCustomerCardById);
  *             type: object
  *             properties:
  *               customer_id:
- *                 type: string
+ *                 type: integer
  *               name:
+ *                 type: string
+ *               phone:
  *                 type: string
  *               number:
  *                 type: string
+ *               year:
+ *                 type: string
+ *               month:
+ *                 type: string
+ *               is_active:
+ *                 type: boolean
+ *               is_main:
+ *                 type: boolean
+
  *     responses:
  *       200:
  *         description: customer card updated successfully

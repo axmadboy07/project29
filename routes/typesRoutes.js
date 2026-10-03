@@ -25,6 +25,7 @@ const controller = require("../controller/types.controller");
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: type created successfully
@@ -106,6 +107,7 @@ router.get("/types/:id", controller.getTypesById);
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: type updated successfully

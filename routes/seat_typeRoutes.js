@@ -25,6 +25,7 @@ const controller = require("../controller/seat_type.controller");
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: seat type created successfully
@@ -106,6 +107,7 @@ router.get("/seat-types/:id", controller.getSeatTypeById);
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: seat type updated successfully

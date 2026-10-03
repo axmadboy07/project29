@@ -25,6 +25,7 @@ const controller = require("../controller/lang.controller");
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: language created successfully
@@ -106,6 +107,7 @@ router.get("/langs/:id", controller.getLangById);
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: language updated successfully

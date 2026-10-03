@@ -25,6 +25,9 @@ const controller = require("../controller/discount.controller");
  *             properties:
  *               discount:
  *                 type: string
+ *               finish_date:
+ *                 type: string
+
  *     responses:
  *       201:
  *         description: discount created successfully
@@ -106,6 +109,9 @@ router.get("/discounts/:id", controller.getDiscountById);
  *             properties:
  *               discount:
  *                 type: string
+ *               finish_date:
+ *                 type: string
+
  *     responses:
  *       200:
  *         description: discount updated successfully

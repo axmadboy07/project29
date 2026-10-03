@@ -25,6 +25,7 @@ const controller = require("../controller/country.controller");
  *             properties:
  *               country_name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: country created successfully
@@ -106,6 +107,7 @@ router.get("/countries/:id", controller.getCountryById);
  *             properties:
  *               country_name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: country updated successfully

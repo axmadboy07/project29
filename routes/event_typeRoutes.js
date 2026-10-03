@@ -25,6 +25,9 @@ const controller = require("../controller/event_type.controller");
  *             properties:
  *               name:
  *                 type: string
+ *               parent_event_type_id:
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: event type created successfully
@@ -106,6 +109,9 @@ router.get("/event-types/:id", controller.getEventTypeById);
  *             properties:
  *               name:
  *                 type: string
+ *               parent_event_type_id:
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: event type updated successfully

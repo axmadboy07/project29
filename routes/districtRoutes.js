@@ -27,7 +27,8 @@ const controller = require("../controller/district.controller");
  *               name:
  *                 type: string
  *               region_id:
- *                 type: string
+ *                 type: integer
+
  *     responses:
  *       201:
  *         description: district created successfully
@@ -110,7 +111,8 @@ router.get("/districts/:id", controller.getDistrictById);
  *               name:
  *                 type: string
  *               region_id:
- *                 type: string
+ *                 type: integer
+
  *     responses:
  *       200:
  *         description: district updated successfully

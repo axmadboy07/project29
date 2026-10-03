@@ -25,6 +25,7 @@ const controller = require("../controller/gender.controller");
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       201:
  *         description: gender created successfully
@@ -106,6 +107,7 @@ router.get("/genders/:id", controller.getGenderById);
  *             properties:
  *               name:
  *                 type: string
+
  *     responses:
  *       200:
  *         description: gender updated successfully
