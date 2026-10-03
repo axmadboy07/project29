@@ -33,8 +33,6 @@ const typesRoutes = require("./routes/typesRoutes");
 const venueRoutes = require("./routes/venueRoutes");
 const venuePhotoRoutes = require("./routes/venue_photoRoutes");
 const venueTypesRoutes = require("./routes/venue_typesRoutes");
-const userRoutes = require("./routes/userRoutes");
-const group6Routes = require("./routes/group6Routes");
 
 dotenv.config();
 
@@ -76,8 +74,6 @@ app.use("/api", typesRoutes);
 app.use("/api", venueRoutes);
 app.use("/api", venuePhotoRoutes);
 app.use("/api", venueTypesRoutes);
-app.use("/api", userRoutes);
-app.use("/api", group6Routes);
 
 setupSwagger(app);
 

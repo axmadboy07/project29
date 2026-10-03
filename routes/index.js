@@ -29,8 +29,6 @@ const typesRoutes = require("./typesRoutes");
 const venueRoutes = require("./venueRoutes");
 const venue_photoRoutes = require("./venue_photoRoutes");
 const venue_typesRoutes = require("./venue_typesRoutes");
-const userRoutes = require("./userRoutes");
-const group6Routes = require("./group6Routes");
 
 router.use(adminRoutes);
 router.use(bookingRoutes);
@@ -61,7 +59,5 @@ router.use(typesRoutes);
 router.use(venueRoutes);
 router.use(venue_photoRoutes);
 router.use(venue_typesRoutes);
-router.use(userRoutes);
-router.use(group6Routes);
 
 module.exports = router;
