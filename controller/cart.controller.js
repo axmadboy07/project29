@@ -1,4 +1,4 @@
-const { Cart, Customer, Cart_item } = require("../models");
+const { Cart, Customer, Cart_item, Ticket_status } = require("../models");
 const { validateCart } = require("../validation/cart.validation");
 const { Op } = require("sequelize");
 
@@ -29,6 +29,7 @@ exports.getCartById = async (req, res) => {
       include: [
         { model: Customer, as: "customer" },
         { model: Cart_item, as: "cart_items" },
+        { model: Ticket_status, as: "status" },
       ],
     });
     if (!cart) return res.status(404).send("Cart not found");

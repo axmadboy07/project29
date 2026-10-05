@@ -41,6 +41,10 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: "cart_id",
       as: "bookings",
     });
+    Cart.belongsTo(models.ticket_status, {
+      foreignKey: "status_id",
+      as: "status",
+    });
   };
 
   return Cart;

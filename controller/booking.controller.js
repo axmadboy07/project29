@@ -1,4 +1,4 @@
-const { Booking, Cart, Payment_method, Delivery_method, Discount } = require("../models");
+const { Booking, Cart, Payment_method, Delivery_method, Discount, Ticket_status } = require("../models");
 const { validateBooking } = require("../validation/booking.validation");
 const { Op } = require("sequelize");
 
@@ -31,6 +31,7 @@ exports.getBookingById = async (req, res) => {
         { model: Payment_method, as: "payment_method" },
         { model: Delivery_method, as: "delivery_method" },
         { model: Discount, as: "discount" },
+        { model: Ticket_status, as: "status" },
       ],
     });
     if (!booking) return res.status(404).send("Booking not found");

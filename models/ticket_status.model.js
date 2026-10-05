@@ -23,6 +23,14 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: "status_id",
       as: "tickets",
     });
+    Ticket_status.hasMany(models.booking, {
+      foreignKey: "status_id",
+      as: "bookings",
+    });
+    Ticket_status.hasMany(models.cart, {
+      foreignKey: "status_id",
+      as: "carts",
+    });
   };
 
   return Ticket_status;
